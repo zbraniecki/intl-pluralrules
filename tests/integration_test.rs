@@ -19,7 +19,7 @@ fn int_0() {
             int: 0,
             dec: 0,
         },
-        intl_pluralrules::p_from_int(0)
+        intl_pluralrules::PluralOperands::new("0")
     );
 }
 
@@ -36,7 +36,7 @@ fn int_2() {
             int: 2,
             dec: 0,
         },
-        intl_pluralrules::p_from_int(2)
+        intl_pluralrules::PluralOperands::new(2)
     );
 }
 
@@ -53,7 +53,7 @@ fn int_57() {
             int: 57,
             dec: 0,
         },
-        intl_pluralrules::p_from_int(57)
+        intl_pluralrules::PluralOperands::new(57)
     );
 }
 
@@ -70,7 +70,7 @@ fn int_987() {
             int: 987,
             dec: 0,
         },
-        intl_pluralrules::p_from_int(987)
+        intl_pluralrules::PluralOperands::new(987)
     );
 }
 
@@ -87,7 +87,7 @@ fn int_1234567() {
             int: 1234567,
             dec: 0,
         },
-        intl_pluralrules::p_from_int(1234567)
+        intl_pluralrules::PluralOperands::new(1234567)
     );
 }
 
@@ -104,7 +104,7 @@ fn int_neg10() {
             int: 10,
             dec: 0,
         },
-        intl_pluralrules::p_from_int(-10)
+        intl_pluralrules::PluralOperands::new(-10)
     );
 }
 
@@ -121,7 +121,7 @@ fn int_neg1000000() {
             int: 1000000,
             dec: 0,
         },
-        intl_pluralrules::p_from_int(-1000000)
+        intl_pluralrules::PluralOperands::new(-1000000)
     );
 }
 
@@ -138,7 +138,7 @@ fn int_023() {
             int: 0,
             dec: 23,
         },
-        intl_pluralrules::p_from_float(0.23)
+        intl_pluralrules::PluralOperands::new(0.23)
     );
 }
 
@@ -155,7 +155,7 @@ fn int_0230() {
             int: 0,
             dec: 23,
         },
-        intl_pluralrules::p_from_float(0.230)
+        intl_pluralrules::PluralOperands::new(0.230)
     );
 }
 
@@ -172,7 +172,7 @@ fn int_0230string() {
             int: 0,
             dec: 230,
         },
-        intl_pluralrules::p_from_string("0.230".to_string())
+        intl_pluralrules::PluralOperands::new("0.230".to_string())
     );
 }
 
@@ -189,7 +189,7 @@ fn int_0203000string() {
             int: 0,
             dec: 203000,
         },
-        intl_pluralrules::p_from_string("0.0203000".to_string())
+        intl_pluralrules::PluralOperands::new("0.0203000".to_string())
     );
 }
 
@@ -206,7 +206,7 @@ fn int_123dot45() {
             int: 123,
             dec: 45,
         },
-        intl_pluralrules::p_from_float(123.45)
+        intl_pluralrules::PluralOperands::new(123.45)
     );
 }
 
@@ -223,6 +223,6 @@ fn int_neg1234dot567() {
             int: 1234,
             dec: 567,
         },
-        intl_pluralrules::p_from_float(-1234.567)
+        intl_pluralrules::PluralOperands::new(-1234.567)
     );
 }

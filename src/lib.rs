@@ -14,7 +14,7 @@ pub struct PluralOperands {
 }
 
 impl PluralOperands {
-	fn new<S: ToString>(num: S) -> Self {
+	pub fn new<S: ToString>(num: S) -> Self {
 		let mut str_num_temp: String = num.to_string();
 
 		println!("{:?}", str_num_temp);
@@ -64,18 +64,6 @@ impl PluralOperands {
 				dec: back.parse().unwrap_or(0)
 			}
 	}
-}
-
-pub fn p_from_string(pass : String) -> PluralOperands {
-	PluralOperands::new(pass)
-}
-
-pub fn p_from_float(pass : f64) -> PluralOperands {
-	PluralOperands::new(pass)
-}
-
-pub fn p_from_int(pass : isize) -> PluralOperands {
-	PluralOperands::new(pass)
 }
 
 fn main() {
