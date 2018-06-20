@@ -11,7 +11,7 @@ fn int_0() {
     assert_eq!(
         PluralOperands {
             n: 0_f64,
-            i: 1,
+            i: 0,
             v: 0,
             w: 0,
             f: 0,
@@ -28,7 +28,7 @@ fn int_2() {
     assert_eq!(
         PluralOperands {
             n: 2_f64,
-            i: 1,
+            i: 2,
             v: 0,
             w: 0,
             f: 0,
@@ -45,7 +45,7 @@ fn int_57() {
     assert_eq!(
         PluralOperands {
             n: 57_f64,
-            i: 2,
+            i: 57,
             v: 0,
             w: 0,
             f: 0,
@@ -62,7 +62,7 @@ fn int_987() {
     assert_eq!(
         PluralOperands {
             n: 987_f64,
-            i: 3,
+            i: 987,
             v: 0,
             w: 0,
             f: 0,
@@ -79,7 +79,7 @@ fn int_1234567() {
     assert_eq!(
         PluralOperands {
             n: 1234567_f64,
-            i: 7,
+            i: 1234567,
             v: 0,
             w: 0,
             f: 0,
@@ -96,7 +96,7 @@ fn int_neg10() {
     assert_eq!(
         PluralOperands {
             n: 10_f64,
-            i: 2,
+            i: 10,
             v: 0,
             w: 0,
             f: 0,
@@ -113,7 +113,7 @@ fn int_neg1000000() {
     assert_eq!(
         PluralOperands {
             n: 1000000_f64,
-            i: 7,
+            i: 1000000,
             v: 0,
             w: 0,
             f: 0,
@@ -130,7 +130,7 @@ fn int_023() {
     assert_eq!(
         PluralOperands {
             n: 0.23_f64,
-            i: 1,
+            i: 0,
             v: 2,
             w: 2,
             f: 23,
@@ -147,7 +147,7 @@ fn int_0230() {
     assert_ne!(
         PluralOperands {
             n: 0.23_f64,
-            i: 1,
+            i: 0,
             v: 3,
             w: 2,
             f: 230,
@@ -164,7 +164,7 @@ fn int_0230string() {
     assert_eq!(
         PluralOperands {
             n: 0.23_f64,
-            i: 1,
+            i: 0,
             v: 3,
             w: 2,
             f: 230,
@@ -181,7 +181,7 @@ fn int_0203000string() {
     assert_eq!(
         PluralOperands {
             n: 0.0203000_f64,
-            i: 1,
+            i: 0,
             v: 7,
             w: 4,
             f: 203000,
@@ -198,7 +198,7 @@ fn int_123dot45() {
     assert_eq!(
         PluralOperands {
             n: 123.45_f64,
-            i: 3,
+            i: 123,
             v: 2,
             w: 2,
             f: 45,
@@ -215,7 +215,7 @@ fn int_neg1234dot567() {
     assert_eq!(
         PluralOperands {
             n: 1234.567_f64,
-            i: 4,
+            i: 1234,
             v: 3,
             w: 3,
             f: 567,

@@ -35,7 +35,8 @@ impl PluralOperands {
 		let back = v.get(1).unwrap_or(&"");
 
 		let absolute_value = f64::from_str(&str_num).unwrap();
-		let integer_digits = front.chars().count() as isize;
+		let integer_digits = isize::from_str(front).unwrap();
+		// let integer_digits = front.chars().count() as isize;
 		let mut num_fraction_digits0 = 0;
 		let mut num_fraction_digits = 0;
 		let mut fraction_digits0 = 0;
@@ -64,9 +65,4 @@ impl PluralOperands {
 			dec: back.parse().unwrap_or(0)
 		}
 	}
-}
-
-fn main() {
-	println!("{:?}", PluralOperands::new("1"));
-	println!("{:?}", PluralOperands::new("1.0"));
 }
