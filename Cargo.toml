@@ -1,5 +1,5 @@
 [package]
-name = "intl-pluralrules"
+name = "intl_pluralrules"
 version = "0.1.0"
 authors = ["unclenacho"]
 
