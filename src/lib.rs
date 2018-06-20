@@ -54,15 +54,15 @@ impl PluralOperands {
 		} 
 
 		PluralOperands {
-				n: absolute_value,
-				i: integer_digits,
-				v: num_fraction_digits0,
-				w: num_fraction_digits,
-				f: fraction_digits0,
-				t: fraction_digits,
-				int: front.parse().unwrap(),
-				dec: back.parse().unwrap_or(0)
-			}
+			n: absolute_value,
+			i: integer_digits,
+			v: num_fraction_digits0,
+			w: num_fraction_digits,
+			f: fraction_digits0,
+			t: fraction_digits,
+			int: front.parse().unwrap(),
+			dec: back.parse().unwrap_or(0)
+		}
 	}
 }
 
